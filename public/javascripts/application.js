@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect(window.location.hostname);
 
 //on connection to server, ask for user's name with an anonmyous callback
 socket.on('connect', function() {
