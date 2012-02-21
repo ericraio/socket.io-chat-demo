@@ -1,5 +1,5 @@
 {
-   "name": "socket.io chat",
+   "name": "chatbox_im",
    "description": "example chat application with socket.io",
    "version": "0.0.1",
    "dependencies": {
