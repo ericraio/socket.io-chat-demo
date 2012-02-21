@@ -1,4 +1,5 @@
 var socket = io.connect(window.location.hostname);
+var date = new Date();
 
 //on connection to server, ask for user's name with an anonmyous callback
 socket.on('connect', function() {
@@ -8,7 +9,7 @@ socket.on('connect', function() {
 
 // listener, whenever the server emits 'updatechat', this updates the chat body
 socket.on('updatechat', function(username, data) {
-  $('#conversation').append('<b>' + username + ':</b> ' + data + '<br>');
+  $('#conversation').append('<div style="font-size:8px;">' + date.toString() + '</div>' + ' <b>' + username + ':</b> ' + data + '<br>');
 });
 
 // listener, whenever the server emits 'updateusers', this updates the username list
@@ -37,3 +38,4 @@ $(function() {
     }
   });
 });
+
