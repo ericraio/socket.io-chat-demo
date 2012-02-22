@@ -1,9 +1,13 @@
 Installation
 ============
 > Install Node
+
 > Install NPM
+
 > clone the project and cd into the directory
+
 > type 'npm install -d'
+
 > then 'node server.js'
 
 
